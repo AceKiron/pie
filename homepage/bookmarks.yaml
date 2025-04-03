@@ -1,0 +1,21 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Developer:
+    - Github:
+        - abbr: Git
+          href: https://github.com/AceKiron?tab=repositories
+    - StackOverflow:
+        - abbr: SO
+          href: https://stackoverflow.com/users/16496469/acekiron
+
+# - Social:
+#     - Reddit:
+#         - abbr: RE
+#           href: https://reddit.com/
+
+# - Entertainment:
+#     - YouTube:
+#         - abbr: YT
+#           href: https://youtube.com/
