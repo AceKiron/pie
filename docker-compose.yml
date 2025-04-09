@@ -11,22 +11,6 @@ services:
     environment:
       - HOMEPAGE_ALLOWED_HOSTS=192.168.2.13:3157
 
-  adguard:
-    image: adguard/adguardhome
-    container_name: AdguardHome
-    ports:
-      - 53:53/tcp
-      - 53:53/udp
-      - 80:80/tcp
-      - 443:443/tcp
-      - 443:443/udp
-      - 3000:3000/tcp
-      - 853:853/tcp
-    volumes:
-      - ./adguard/work:/opt/adguard/work
-      - ./adguard/conf:/opt/adguard/conf
-    restart: unless-stopped
-
   jellyfin:
     image: jellyfin/jellyfin
     container_name: Jellyfin
@@ -78,16 +62,3 @@ services:
       - ./rutorrent/config:/config
       - ./rutorrent/downloads:/downloads
     restart: unless-stopped
-  
-  filebrowser:
-    image: filebrowser/filebrowser:s6
-    environment:
-      - PUID=1000
-      - PGID=1000
-    container_name: FileBrowser
-    ports:
-      - 8080:80
-    volumes:
-      - ./:/srv
-      - ./filebrowser/database:/database
-      - ./filebrowser/config:/config

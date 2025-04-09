@@ -20,22 +20,9 @@
         widget:
             type: rutorrent
             url: http://192.168.2.13:3580/
-    - FileBrowser:
-        icon: filebrowser.png
-        href: http://192.168.2.13:8080/
-        description: Filebrowser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.
 
 - Automation:
     - HomeAssistant:
         icon: home-assistant.png
         href: http://192.168.2.13:8123/
         description: Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
-
-- Utilities:
-    - AdGuard:
-        icon: adguard-home.png
-        href: http://192.168.2.13:80/
-        description: AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.
-        widget:
-            type: adguard
-            url: http://192.168.2.13:80/
